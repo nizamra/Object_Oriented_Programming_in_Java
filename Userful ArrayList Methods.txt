@@ -1,0 +1,8 @@
+methods				example				description
+set(index, value)		list.set(0, 'x')		replaces the current value at the given index with the given value
+get(index)			list.get(0)			returns the current value stored at the given index
+add(value)			list.add('x')			adds the given value to the end of the list
+add(value, index)		list.add('x', 1)		inserts the given value at the given index, shifting anything that was at that index or later towards the back of the list
+indexOf(value)			list.indexOf('x')		returns the first index of where the given value is found, will return -1 if the value is not in the list
+contains(value)			list.contains('x')		returns true if the given value is found somewhere in the list, false otherwise
+remove(index)			list.remove(0)			removes and returns the value at the given index, shifting all elements after the index towards the front of the list

@@ -1,0 +1,25 @@
+//In order to create a new object you have to write a class that "defines" it. In this way you can think of this as adding a new keyword to Java, but to do so you have to tell Java what this keyword means. Here's how we would define a "Student" object that includes all the variables from the example above:
+
+public class Student {
+    // fields
+    String name;
+    int grad;
+    int ID;
+    double GPA;
+    int abs;
+
+    // constructor
+    public Student(String name, int grad, int ID, double GPA, int abs) {
+        this.name = name;
+        this.grad = grad;
+        this.ID = ID;
+        this.GPA = GPA;
+        this.abs = abs;
+    }
+
+    // behavior
+    public boolean isGraduating() {
+        return (GPA > 2.0 && abs < 10 && grad == 12);
+    }
+}
+//Notice that this class does not have a main method. That is because this code cannot be executed by itself, but must instead be invoked by a different class that does have a main method.

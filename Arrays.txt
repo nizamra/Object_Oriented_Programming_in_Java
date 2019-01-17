@@ -1,0 +1,9 @@
+Here is a table of some of the most useful array methods:
+
+method                              example                     description
+toString(array)         	Arrays.toString(a)	returns a String representation of the array using square brackets and commas like so: [value, value, value]
+equals(array1, array2)	        Arrays.equal(a, b) OR a.equals(b)	returns true if the two arrays contain the same elements in the same order
+fill(array, value)	        Arrays.fill(a, 10)	fills every index of the array with a copy of the given value
+copyOf(array, newLength)	Arrays.copyOf(a, 10)	creates a new array object with the given length and fills it with values in the same order as the original array. If there are left over indexes those are filled with the data type's zero value
+sort(array)	                Arrays.sort(a)	arranges the values in the array in sorted order from smallest to largest
+binarySearch(array, value)	Arrays.binarySearch(a, 100)	returns the index of th given value in a sorted array. Will return a negative number if the value doesn't exist in the array.
